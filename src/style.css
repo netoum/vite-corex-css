@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import "./normalize.css";
+@import "@netoum/corex-css";
+
+/* For different themes and modes use one of the following instead */
+/* @import "@netoum/corex-css/neo.css"; */
+/* @import "@netoum/corex-css/neo/light.css"; */
+/* @import "@netoum/corex-css/neo/dark.css"; */
+
+/* @import "@netoum/corex-css/revo.css"; */
+/* @import "@netoum/corex-css/revo/light.css"; */
+/* @import "@netoum/corex-css/revo/dark.css"; */
+
+/* @import "@netoum/corex-css/uno.css"; */
+/* @import "@netoum/corex-css/uno/light.css"; */
+/* @import "@netoum/corex-css/uno/dark.css"; */
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-layer);
+    color: var(--color-contrast-2);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    letter-spacing: var(--font-letter-spacing-4);
+    line-height: var(--font-line-height);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-wrap: pretty;
+
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-ui);
+    padding: var(--padding-ui);
+}
+
+.logo {
+    height: 2rem;
+    color: var(--color-accent-brand);
+    transition: color 0.2s;
+}
+
+.logo:hover {
+    color: var(--color-accent-brand-1);
+}
+
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 48rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--padding-ui)
+}
+
+.switcher .theme-switcher[data-part="item"][data-state="on"] {
+    background-color: var(--color-accent-brand);
+    color: var(--color-accent-contrast);
+}
+
+.switcher .theme-switcher[data-state="on"]:hover {
+    background-color: var(--color-accent-brand-1);
+}
+
+.switcher .theme-switcher[data-state="on"]:active {
+    background-color: var(--color-accent-brand-2);
+}
+
+.preview {
+    gap: var(--gap-ui);
+    display: flex;
+    flex-wrap: wrap
+}

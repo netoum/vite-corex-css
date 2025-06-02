@@ -2,6 +2,7 @@ import './style.css'
 
 import "@netoum/corex";
 
+// or import each component
 // import "@netoum/corex/accordion";
 // import "@netoum/corex/avatar";
 // import "@netoum/corex/checkbox";

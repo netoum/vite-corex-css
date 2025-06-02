@@ -17,6 +17,37 @@
 /* @import "@netoum/corex-css/uno/dark.css"; */
 
 
+/* Or for individual imports */
+/* @import "@netoum/corex-css/tokens/global/color.css";
+@import "@netoum/corex-css/tokens/global/border.css";
+@import "@netoum/corex-css/tokens/global/font.css";
+@import "@netoum/corex-css/tokens/global/dimension.css";
+@import "@netoum/corex-css/tokens/neo/light/semantic/border.css";
+@import "@netoum/corex-css/tokens/neo/light/semantic/color.css";
+@import "@netoum/corex-css/tokens/neo/light/semantic/dimension.css";
+@import "@netoum/corex-css/tokens/neo/light/semantic/font.css";
+
+@import "@netoum/corex-css/components/accordion.css";
+@import "@netoum/corex-css/components/avatar.css";
+@import "@netoum/corex-css/components/badge.css";
+@import "@netoum/corex-css/components/button.css";
+@import "@netoum/corex-css/components/checkbox.css";
+@import "@netoum/corex-css/components/clipboard.css";
+@import "@netoum/corex-css/components/collapsible.css";
+@import "@netoum/corex-css/components/dialog.css";
+@import "@netoum/corex-css/components/link.css";
+@import "@netoum/corex-css/components/listbox.css";
+@import "@netoum/corex-css/components/menu.css";
+@import "@netoum/corex-css/components/switch.css";
+@import "@netoum/corex-css/components/switcher.css";
+@import "@netoum/corex-css/components/tabs.css";
+@import "@netoum/corex-css/components/toggle-group.css";
+@import "@netoum/corex-css/components/tree-view.css"; */
+
+
+
+
+
 body {
     min-height: 100vh;
     display: flex;
@@ -64,18 +95,6 @@ main {
     padding: var(--padding-ui)
 }
 
-.switcher .theme-switcher[data-part="item"][data-state="on"] {
-    background-color: var(--color-accent-brand);
-    color: var(--color-accent-contrast);
-}
-
-.switcher .theme-switcher[data-state="on"]:hover {
-    background-color: var(--color-accent-brand-1);
-}
-
-.switcher .theme-switcher[data-state="on"]:active {
-    background-color: var(--color-accent-brand-2);
-}
 
 .preview {
     gap: var(--gap-ui);

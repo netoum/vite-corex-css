@@ -1,6 +1,6 @@
 {
   "name": "vite-corex-css",
-  "version": "0.0.1",
+  "private": true,
   "description": "A demo Vite starter template using Corex with plain CSS. Quickly scaffold your Corex design system project.",
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@netoum/corex": "0.0.1",
-    "@netoum/corex-css": "0.0.1"
+    "@netoum/corex": "0.0.2",
+    "@netoum/corex-css": "0.0.2"
   }
 }

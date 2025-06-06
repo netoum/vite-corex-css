@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/corex.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corex Accordion</title>
+  <title>Corex Scrollbar</title>
   <script type="module" src="/src/main.ts"></script>
 </head>
 
@@ -32,55 +32,24 @@
     </a>
   </header>
   <main>
-    <div class="accordion accordion-js">
-      <div data-part="root">
-        <div data-part="item" data-value="item-1">
-          <h3>
-            <button data-part="item-trigger" data-value="item-1">
-              Lorem
-              <span data-part="item-indicator" data-value="item-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-              </span>
-            </button>
-          </h3>
-          <div data-part="item-content" data-value="item-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
+    <div class="preview">
+      <div class="scrollbar" style="width: 150px; height: 150px; overflow-y: auto; justify-content: start;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus, aliquam vitae
+        suscipit non, mattis vel enim. Aliquam in leo luctus, accumsan neque varius, fringilla lorem.
+        Duis eros ipsum, efficitur non faucibus vel, eleifend nec urna. Nunc varius, nisl sed blandit
+        rhoncus, urna neque posuere nisi, eu lacinia odio felis sed nibh.
+      </div>
+      <div class="scrollbar" style="width: 150px; overflow-x: auto; justify-content: start;">
+        <div style="min-width: 300px; display: inline-block;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus.
         </div>
-        <div data-part="item" data-value="item-2">
-          <h3>
-            <button data-part="item-trigger" data-value="item-2">
-              Duis
-              <span data-part="item-indicator" data-value="item-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-              </span>
-            </button>
-          </h3>
-          <div data-part="item-content" data-value="item-2">
-            Duis a sem ut diam interdum ultricies sit amet id arcu.
-          </div>
-        </div>
-        <div data-part="item" data-value="item-3">
-          <h3>
-            <button data-part="item-trigger" data-value="item-3">
-              Donec
-              <span data-part="item-indicator">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-              </span>
-            </button>
-          </h3>
-          <div data-part="item-content" data-value="item-3">
-            Donec pretium magna cursus ante tincidunt porta.
-          </div>
+      </div>
+      <div class="scrollbar" style="width: 150px; height: 150px; overflow: auto; justify-content: start;">
+        <div style="min-width: 300px; min-height: 300px; display: block;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi risus, aliquam vitae
+          suscipit non, mattis vel enim. Aliquam in leo luctus, accumsan neque varius, fringilla lorem.
+          Duis eros ipsum, efficitur non faucibus vel, eleifend nec urna. Nunc varius, nisl sed blandit
+          rhoncus, urna neque posuere nisi, eu lacinia odio felis sed nibh.
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
-@import "./normalize.css";
 @import "@netoum/corex-css";
 
 /* For different themes and modes use one of the following instead */
@@ -10,7 +9,7 @@
 
 /* @import "@netoum/corex-css/revo.css"; */
 /* @import "@netoum/corex-css/revo/light.css"; */
-/* @import "@netoum/corex-css/revo/dark.css"; */
+@import "@netoum/corex-css/revo/dark.css";
 
 /* @import "@netoum/corex-css/uno.css"; */
 /* @import "@netoum/corex-css/uno/light.css"; */
@@ -44,26 +43,10 @@
 @import "@netoum/corex-css/components/toggle-group.css";
 @import "@netoum/corex-css/components/tree-view.css"; */
 
-
-
-
-
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-layer);
-    color: var(--color-contrast-2);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    letter-spacing: var(--font-letter-spacing-4);
-    line-height: var(--font-line-height);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-wrap: pretty;
-
-}
+    background: var(--color-layer);
+  }
 
 header {
     display: flex;
@@ -76,12 +59,12 @@ header {
 
 .logo {
     height: 2rem;
-    color: var(--color-accent-brand);
+    color: var(--color-contrast-brand-1);
     transition: color 0.2s;
 }
 
 .logo:hover {
-    color: var(--color-accent-brand-1);
+    color: var(--color-contrast-brand-2);
 }
 
 main {

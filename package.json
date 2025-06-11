@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "pagefind": "^1.3.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@netoum/corex": "0.0.3",
-    "@netoum/corex-css": "0.0.3"
+    "@netoum/corex": "0.0.4",
+    "@netoum/corex-css": "0.0.4"
   }
 }

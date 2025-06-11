@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/corex.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corex Dialog</title>
+  <title>Corex Site Search</title>
   <script type="module" src="/src/main.ts"></script>
 </head>
 
@@ -30,36 +30,27 @@
           fill="currentColor" />
       </svg>
     </a>
-      
+    
 
     </div>
   </header>
   <main>
-    <h1>Dialog</h1>
+    <h1>Site Search</h1>
     <div class="preview">
-      <div class="dialog dialog-js">
-        <button data-part="trigger" class="button" aria-label="Open dialog">
-          Open Dialog
-        </button>
-        <div data-part="backdrop"></div>
-        <div data-part="positioner">
-          <div data-part="content">
-            <h3 data-part="title">Title</h3>
-            <p data-part="description">
-              Description
-            </p>
-            <button data-part="close-trigger" class="button button--circle button-sm" aria-label="Close menu">
-              <svg class="button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
+      <div class="site-search-js site-search" data-placeholder="Search site">
+        <div data-part="root">
+        <div data-part="control">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="site-search__icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+        </svg>
+        <input data-part="input">
         </div>
-      </div>
+        <div data-part="positioner">
+        <ul data-part="content" class="scrollbar">
+        </ul>
+        </div>
+        </div>
+        </div>
     </div>
   </main>
 </body>
